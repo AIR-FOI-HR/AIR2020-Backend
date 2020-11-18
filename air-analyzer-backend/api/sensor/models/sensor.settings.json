@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sensors",
+  "info": {
+    "name": "Sensor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Mark": {
+      "type": "uid"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "sensor_type": {
+      "model": "sensor-type"
+    },
+    "sensor_data": {
+      "collection": "sensor-data",
+      "via": "sensor"
+    },
+    "room": {
+      "model": "room",
+      "via": "sensor"
+    }
+  }
+}
