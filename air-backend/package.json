@@ -1,0 +1,39 @@
+{
+  "name": "air-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "gcp-build": "strapi build"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "pg": "^8.5.1",
+    "sqlite3": "^5.0.0",
+    "strapi": "3.3.3",
+    "strapi-admin": "3.3.3",
+    "strapi-connector-bookshelf": "3.3.3",
+    "strapi-plugin-content-manager": "3.3.3",
+    "strapi-plugin-content-type-builder": "3.3.3",
+    "strapi-plugin-email": "3.3.3",
+    "strapi-plugin-upload": "3.3.3",
+    "strapi-plugin-users-permissions": "3.3.3",
+    "strapi-utils": "3.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "294d435c-57b7-4a80-a4a1-86e7e55188f2"
+  },
+  "engines": {
+    "node": ">=10.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

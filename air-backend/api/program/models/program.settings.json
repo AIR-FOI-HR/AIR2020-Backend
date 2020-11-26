@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "name": "Program",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "short_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
