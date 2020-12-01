@@ -67,6 +67,19 @@
     },
     "logToken": {
       "type": "text"
+    },
+    "profile_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "events": {
+      "collection": "event",
+      "via": "user"
     }
   }
 }

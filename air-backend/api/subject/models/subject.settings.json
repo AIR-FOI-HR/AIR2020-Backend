@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "name": "Subject"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Semester": {
+      "type": "integer",
+      "max": 6
+    },
+    "program": {
+      "model": "program"
+    }
+  }
+}

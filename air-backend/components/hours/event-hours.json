@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_hours_event_hours",
+  "info": {
+    "name": "event_hours",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "string",
+      "required": true
+    },
+    "start_time": {
+      "type": "string",
+      "required": true
+    },
+    "end_time": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
