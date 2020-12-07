@@ -80,6 +80,13 @@
     "events": {
       "collection": "event",
       "via": "user"
+    },
+    "year": {
+      "type": "integer",
+      "max": 5
+    },
+    "program": {
+      "model": "program"
     }
   }
 }

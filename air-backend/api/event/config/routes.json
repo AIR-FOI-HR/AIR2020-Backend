@@ -10,14 +10,6 @@
     },
     {
       "method": "GET",
-      "path": "/events/:username",
-      "handler": "event.findByUsername",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
       "path": "/events/count",
       "handler": "event.count",
       "config": {
