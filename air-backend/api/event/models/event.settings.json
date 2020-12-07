@@ -14,12 +14,6 @@
     "Name": {
       "type": "string"
     },
-    "calendar": {
-      "type": "component",
-      "repeatable": true,
-      "component": "hours.event-hours",
-      "required": true
-    },
     "event_type": {
       "model": "event-type"
     },
@@ -30,9 +24,29 @@
       "model": "room"
     },
     "user": {
-      "via": "events",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "events"
+    },
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "monday",
+        "tuesday",
+        "wedensday",
+        "thursday",
+        "friday"
+      ],
+      "required": true,
+      "default": "monday"
+    },
+    "start_time": {
+      "type": "string",
+      "required": true
+    },
+    "end_time": {
+      "type": "string",
+      "required": true
     }
   }
 }
