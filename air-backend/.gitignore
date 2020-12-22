@@ -111,5 +111,5 @@ license.txt
 exports
 .cache
 build
-
+yarn.lock
 app.yaml
