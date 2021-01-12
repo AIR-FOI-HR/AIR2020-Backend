@@ -78,8 +78,8 @@
       "required": false
     },
     "events": {
-      "via": "user",
-      "collection": "event"
+      "collection": "event",
+      "via": "user"
     },
     "year": {
       "type": "integer",
@@ -87,6 +87,13 @@
     },
     "program": {
       "model": "program"
+    },
+    "semester": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "max": 6,
+      "min": 1
     }
   }
 }

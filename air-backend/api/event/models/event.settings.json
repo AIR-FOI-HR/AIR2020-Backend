@@ -24,9 +24,9 @@
       "model": "room"
     },
     "user": {
+      "via": "events",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "events"
+      "model": "user"
     },
     "day": {
       "type": "enumeration",

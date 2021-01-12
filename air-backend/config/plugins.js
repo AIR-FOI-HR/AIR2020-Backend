@@ -2,11 +2,11 @@ module.exports = ({ env }) => ({
   upload: {
     provider: 'aws-s3',
     providerOptions: {
-      accessKeyId: 'AKIAI6S6SJEFZBZR7JLQ',
-      secretAccessKey: '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',
+      accessKeyId: 'AKIAIUJI6N6VOLIZ6UJA',
+      secretAccessKey: '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',
       region: 'eu-central-1',
       params: {
-        Bucket: 'airanalyzer',
+        Bucket: 'air-analyzer',
       },
     },
   },
