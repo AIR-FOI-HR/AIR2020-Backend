@@ -1188,8 +1188,7 @@
         "required": [
           "id",
           "username",
-          "email",
-          "semester"
+          "email"
         ],
         "properties": {
           "id": {
@@ -1365,6 +1364,12 @@
                 "end_time": {
                   "type": "string"
                 },
+                "max_attendance": {
+                  "type": "integer"
+                },
+                "min_attendance": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1415,8 +1420,7 @@
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email",
-          "semester"
+          "email"
         ],
         "properties": {
           "username": {

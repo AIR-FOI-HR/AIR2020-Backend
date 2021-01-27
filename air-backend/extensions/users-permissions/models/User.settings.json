@@ -78,8 +78,8 @@
       "required": false
     },
     "events": {
-      "collection": "event",
-      "via": "user"
+      "via": "user",
+      "collection": "event"
     },
     "year": {
       "type": "integer",
@@ -91,7 +91,7 @@
     "semester": {
       "type": "integer",
       "default": 1,
-      "required": true,
+      "required": false,
       "max": 6,
       "min": 1
     }

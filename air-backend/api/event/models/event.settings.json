@@ -24,9 +24,9 @@
       "model": "room"
     },
     "user": {
-      "via": "events",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "events"
     },
     "day": {
       "type": "enumeration",
@@ -47,6 +47,12 @@
     "end_time": {
       "type": "string",
       "required": true
+    },
+    "max_attendance": {
+      "type": "integer"
+    },
+    "min_attendance": {
+      "type": "integer"
     }
   }
 }

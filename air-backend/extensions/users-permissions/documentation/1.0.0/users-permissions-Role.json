@@ -528,8 +528,7 @@
               "required": [
                 "id",
                 "username",
-                "email",
-                "semester"
+                "email"
               ],
               "properties": {
                 "id": {

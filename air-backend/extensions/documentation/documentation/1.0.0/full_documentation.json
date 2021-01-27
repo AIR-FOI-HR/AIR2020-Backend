@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/12/2021 6:52:53 PM"
+    "x-generation-date": "01/27/2021 12:14:21 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4683,6 +4683,63 @@
         ]
       }
     },
+    "/sensorConnectionStrings": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Sensor"
+        ],
+        "parameters": []
+      }
+    },
     "/subjects": {
       "get": {
         "deprecated": false,
@@ -7905,8 +7962,7 @@
             "required": [
               "id",
               "username",
-              "email",
-              "semester"
+              "email"
             ],
             "properties": {
               "id": {
@@ -8008,6 +8064,12 @@
               },
               "end_time": {
                 "type": "string"
+              },
+              "max_attendance": {
+                "type": "integer"
+              },
+              "min_attendance": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
@@ -8218,8 +8280,7 @@
             "required": [
               "id",
               "username",
-              "email",
-              "semester"
+              "email"
             ],
             "properties": {
               "id": {
@@ -8304,6 +8365,12 @@
           "end_time": {
             "type": "string"
           },
+          "max_attendance": {
+            "type": "integer"
+          },
+          "min_attendance": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8348,6 +8415,12 @@
           },
           "end_time": {
             "type": "string"
+          },
+          "max_attendance": {
+            "type": "integer"
+          },
+          "min_attendance": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -8924,8 +8997,7 @@
               "required": [
                 "id",
                 "username",
-                "email",
-                "semester"
+                "email"
               ],
               "properties": {
                 "id": {
@@ -9035,8 +9107,7 @@
         "required": [
           "id",
           "username",
-          "email",
-          "semester"
+          "email"
         ],
         "properties": {
           "id": {
@@ -9212,6 +9283,12 @@
                 "end_time": {
                   "type": "string"
                 },
+                "max_attendance": {
+                  "type": "integer"
+                },
+                "min_attendance": {
+                  "type": "integer"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9262,8 +9339,7 @@
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email",
-          "semester"
+          "email"
         ],
         "properties": {
           "username": {
