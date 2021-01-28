@@ -47,6 +47,12 @@
     "end_time": {
       "type": "string",
       "required": true
+    },
+    "max_attendance": {
+      "type": "integer"
+    },
+    "min_attendance": {
+      "type": "integer"
     }
   }
 }

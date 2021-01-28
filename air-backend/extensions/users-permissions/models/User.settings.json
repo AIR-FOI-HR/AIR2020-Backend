@@ -87,6 +87,13 @@
     },
     "program": {
       "model": "program"
+    },
+    "semester": {
+      "type": "integer",
+      "default": 1,
+      "required": false,
+      "max": 6,
+      "min": 1
     }
   }
 }
