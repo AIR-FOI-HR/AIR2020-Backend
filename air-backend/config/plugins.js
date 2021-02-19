@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
       secretAccessKey: '398OWJ3Ae3YHhjQVsr/cZM7OVrJx+YGJsl2hOWWw',
       region: 'eu-central-1',
       params: {
-        Bucket: 'airanalyzer',
+        Bucket: 'air-analyzer',
       },
     },
   },
